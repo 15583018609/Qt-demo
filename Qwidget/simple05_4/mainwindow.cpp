@@ -72,6 +72,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->statusbar->addWidget(LabCellPos);
     ui->statusbar->addWidget(LabCellText);
 
+    ui->tableView->setItemDelegateForColumn(0,&intspinDelegate);
+
+
+
     connect(theSelection,SIGNAL(currentChanged(QModelIndex,QModelIndex)),this,SLOT(on_currentChanged(QModelIndex,QModelIndex)));
 }
 

@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QStandardItemModel>
 #include <QItemSelectionModel>
+#include "qintdalegate.h"
 #define FixedColumnCount 6
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,6 +21,7 @@ private:
         QLabel  *LabCellPos;    //当前单元格行列号
         QLabel  *LabCellText;   //当前单元格内容
 
+        QIntDalegate intspinDelegate;
         QStandardItemModel  *theModel;//数据模型
         QItemSelectionModel *theSelection;//Item选择模型
         void initModelFromStringList(QStringList& fileContent);
