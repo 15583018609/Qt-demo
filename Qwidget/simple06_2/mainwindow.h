@@ -29,7 +29,7 @@ private slots:
     void on_actTab_Locate_triggered();
 
     void on_tableView_clicked(const QModelIndex &index);
-
+    //add git test
 private:
     QStandardItemModel *theModel;
     QItemSelectionModel *theSelection;
